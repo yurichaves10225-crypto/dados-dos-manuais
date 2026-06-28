@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "vinhedo_estimado_bbox",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "nome": "vinhedo_estimado (aptidao de relevo)", "alt_media_m": 412, "decliv_media_pct": 8.2 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -52.649620407448914, -30.575316054933648 ], [ -52.649086327837573, -30.543745752411233 ], [ -52.685560403716188, -30.543278743292849 ], [ -52.686106282473069, -30.574848460723004 ], [ -52.649620407448914, -30.575316054933648 ] ] ] } }
+]
+}

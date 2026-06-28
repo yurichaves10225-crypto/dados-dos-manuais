@@ -1,0 +1,7 @@
+# tiles brutos do DEM (baixados sob demanda) e caches
+dem/
+dem_cache/
+__pycache__/
+*.pyc
+saida_*/
+teste_*/

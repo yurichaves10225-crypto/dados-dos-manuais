@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "area_viticola_bbox",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "nome": "area_viticola_exemplo" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -52.49, -30.575 ], [ -52.49, -30.515 ], [ -52.56, -30.515 ], [ -52.56, -30.575 ], [ -52.49, -30.575 ] ] ] } }
+]
+}
