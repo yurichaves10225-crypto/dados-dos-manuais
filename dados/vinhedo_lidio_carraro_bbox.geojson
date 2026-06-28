@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "vinhedo_lidio_carraro_bbox",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "nome": "Vinhedo Lidio Carraro (coordenada informada)", "lat": -30.5439, "lon": -52.5219, "alt_media_m": 398, "decliv_media_pct": 9.5 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -52.503904902912524, -30.559898147014223 ], [ -52.503418287608, -30.528325552023674 ], [ -52.539889200390697, -30.527899527462626 ], [ -52.540387609088683, -30.559471588509076 ], [ -52.503904902912524, -30.559898147014223 ] ] ] } }
+]
+}

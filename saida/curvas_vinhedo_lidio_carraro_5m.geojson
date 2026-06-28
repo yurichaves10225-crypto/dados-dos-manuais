@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "curvas_lidio_carraro_aprox_5m",
+"name": "curvas_vinhedo_lidio_carraro_5m",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "elev_m": 365.0 }, "geometry": { "type": "LineString", "coordinates": [ [ -52.539975593707261, -30.559301495691798 ], [ -52.540058802389574, -30.559285579544262 ], [ -52.540092524553486, -30.5593001124636 ] ] } },
