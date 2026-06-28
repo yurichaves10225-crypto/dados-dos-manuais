@@ -19,19 +19,24 @@ dados/
   encruzilhada_limite.geojson        limite municipal (IBGE, WGS84)
   area_viticola_bbox.geojson         retângulo da área vitícola de exemplo
   vinhedo_estimado_bbox.geojson      retângulo do vinhedo estimado por aptidão
+  lidio_carraro_aprox_bbox.geojson   retângulo do recorte da Lidio Carraro (aprox.)
   dem_encruzilhada_utm22s.tif        MDE recortado no município (UTM 22S, metros)
 saida/
   curvas_municipio_20m.geojson/.kml          curvas do município (equidist. 20 m)
   curvas_vinhedo_5m.geojson/.kml             curvas da área vitícola (5 m)
   curvas_vinhedo_estimado_5m.geojson/.kml    curvas do vinhedo estimado (5 m)
+  curvas_lidio_carraro_aprox_5m.geojson/.kml curvas da Lidio Carraro (aprox., 5 m)
   mapa_municipio.png                         relevo + curvas (mestras de 100 m)
   mapa_vinhedo_curvas.png                    relevo + curvas de 5 m
   mapa_vinhedo_declividade.png               declividade (classes Embrapa)
   mapa_vinhedo_estimado_curvas.png           relevo + curvas — vinhedo estimado
   mapa_vinhedo_estimado_declividade.png      declividade — vinhedo estimado
+  mapa_lidio_carraro_aprox_curvas.png        relevo + curvas — Lidio Carraro (aprox.)
+  mapa_lidio_carraro_aprox_declividade.png   declividade — Lidio Carraro (aprox.)
 scripts/
   gerar_curvas_nivel.py              CLI reutilizável — aponte para o SEU talhão
   estimar_vinhedo.py                 estipula um vinhedo por aptidão de relevo
+  final_lidio.py                     recorte ancorado na Lidio Carraro (aprox.)
   curvas.py / run_all.py             pipeline que reproduz as saídas acima
   baixar_dem.sh                      baixa os tiles do MDE
 ```
@@ -62,6 +67,22 @@ abrem no **QGIS** (e em GIS web).
 > real, use o CLI abaixo apontando para as coordenadas ou o arquivo do talhão.
 
 ---
+
+## Vinhedo mais famoso: Lidio Carraro (localização aproximada)
+
+A vinícola mais famosa do município é a **Lidio Carraro** (Serra do Sudeste;
+~230 ha de propriedade, ~48 ha de vinhedos; linha *Faces do Brasil*). As
+**coordenadas exatas das parcelas não são públicas**, então o recorte final foi
+ancorado na coordenada documentada da **sede de Encruzilhada do Sul** como
+referência:
+
+- **Referência:** `30°32'38"S 52°31'19"W` (≈ `-30,5439, -52,5219`), altitude ~432 m
+- Janela de 3,5 km · altitude média ~398 m · declividade média ~9,5%
+- Gerado por `scripts/final_lidio.py`
+- Saídas: `saida/curvas_lidio_carraro_aprox_5m.*` e `mapa_lidio_carraro_aprox_*.png`
+
+> ⚠️ É a **localidade** da vinícola (sede municipal), não o limite exato das
+> parcelas. Com o KML/coordenadas reais do talhão, o CLI recorta com precisão.
 
 ## Vinhedo estimado por aptidão de relevo
 
