@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "vinhedo_3_bbox",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "nome": "Vinhedo 3 (aptidão de relevo)", "lat": -30.58509, "lon": -52.69524, "alt_media_m": 442, "decliv_media_pct": 9.1 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -52.677268063422758, -30.601115906524257 ], [ -52.676724477285951, -30.569546173086643 ], [ -52.713207682727578, -30.569071063285936 ], [ -52.713763082587569, -30.600640201791702 ], [ -52.677268063422758, -30.601115906524257 ] ] ] } }
+]
+}
