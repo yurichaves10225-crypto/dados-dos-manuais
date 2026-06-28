@@ -20,12 +20,18 @@ dados/
   area_viticola_bbox.geojson         retângulo da área vitícola de exemplo
   vinhedo_estimado_bbox.geojson      retângulo do vinhedo estimado por aptidão
   vinhedo_lidio_carraro_bbox.geojson retângulo do vinhedo (coordenada informada)
+  vinhedo_2_bbox.geojson             retângulo do Vinhedo 2 (aptidão de relevo)
+  vinhedo_3_bbox.geojson             retângulo do Vinhedo 3 (aptidão de relevo)
   dem_encruzilhada_utm22s.tif        MDE recortado no município (UTM 22S, metros)
 saida/
   curvas_municipio_20m.geojson/.kml             curvas do município (equidist. 20 m)
   curvas_vinhedo_5m.geojson/.kml                curvas da área vitícola (5 m)
   curvas_vinhedo_estimado_5m.geojson/.kml       curvas do vinhedo estimado (5 m)
   curvas_vinhedo_lidio_carraro_5m.geojson/.kml  curvas do vinhedo Lidio Carraro (5 m)
+  curvas_vinhedo_2_5m.geojson/.kml              curvas do Vinhedo 2 (5 m)
+  curvas_vinhedo_3_5m.geojson/.kml              curvas do Vinhedo 3 (5 m)
+  mapa_vinhedo_2_curvas.png / _declividade.png  Vinhedo 2 (relevo+curvas / declividade)
+  mapa_vinhedo_3_curvas.png / _declividade.png  Vinhedo 3 (relevo+curvas / declividade)
   mapa_municipio.png                            relevo + curvas (mestras de 100 m)
   mapa_vinhedo_curvas.png                       relevo + curvas de 5 m
   mapa_vinhedo_declividade.png                  declividade (classes Embrapa)
@@ -37,6 +43,7 @@ scripts/
   gerar_curvas_nivel.py              CLI reutilizável — aponte para o SEU talhão
   estimar_vinhedo.py                 estipula um vinhedo por aptidão de relevo
   vinhedo_final.py                   recorte do vinhedo por coordenada informada
+  multi_vinhedos.py                  seleciona N vinhedos por aptidão e gera tudo
   curvas.py / run_all.py             pipeline que reproduz as saídas acima
   baixar_dem.sh                      baixa os tiles do MDE
 ```
