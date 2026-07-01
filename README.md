@@ -1,5 +1,10 @@
 # Curvas de nível — vinhedos de Encruzilhada do Sul / RS
 
+> 🌱 Site institucional (**XSmart AgroLab**) em [`index.html`](index.html) —
+> abra o arquivo direto no navegador ou publique via GitHub Pages. Divulga o
+> Instagram [@xsmartagrolab](https://www.instagram.com/xsmartagrolab) e usa
+> os mapas gerados neste repositório como portfólio.
+
 Geração de **curvas de nível**, **declividade** e **relevo sombreado** para a área
 vitícola do município de **Encruzilhada do Sul (RS)**, a partir de um Modelo Digital
 de Elevação (MDE) de domínio público.
